@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/palmerj3/jest-junit.svg?branch=master)](https://travis-ci.org/palmerj3/jest-junit)
-
-# jest-junit
+# jest-junit (unofficial test branch)
 A Jest reporter that creates compatible junit xml files
 
 ## Installation

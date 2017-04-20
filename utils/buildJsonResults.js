@@ -64,11 +64,12 @@ module.exports = function (report, appDirectory, options) {
       if (tc.status === 'failed') {
         tc.failureMessages.forEach((failure) => {
           testCase.testcase.push({
-            'failure': [{
-              _attr: {
-                message: failure || ''
-              }
-            }]
+            'failure': [
+              {
+                _attr: {
+                  message: failure.split(/[\n\r]+/)[0] || ''
+                }
+              }, failure]
           });
         })
       }
